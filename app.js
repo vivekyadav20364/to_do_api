@@ -13,7 +13,7 @@ connectDB();
 const taskRoutes = require("./routers/taskRoutes");
 const authRoutes = require("./routers/authRoutes");
 
-app.use("/api/tasks", taskRoutes);
-app.use("/api/auth", authRoutes);
+app.use("/tasks", taskRoutes);
+app.use("/auth", authRoutes);
 
 app.listen(process.env.PORT, () => console.log("Server running on port 5000"));
